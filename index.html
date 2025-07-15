@@ -4,12 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="/styles.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Css Mini Project</title>
 </head>
+
+<body class="min-h-screen bg-white overflow-x-hidden">
+  <!-- NavBar (Desktop) -->
+  <header class="w-full md:max-w-[1920px] mx-auto hidden md:flex items-center justify-between pt-9 px-20 bg-[#FFF9F3] box-border"> 
+      <div class="flex items-center min-w-[260px]"> 
+        <img src="images/eu-logo-black.png" class="h-[52px] mr-1 align-middle" alt="Eu Logo" /> 
+        <span class="font-poppins font-extrabold text-[37px] text-[#181818]">Eu.</span> </div> 
+        <nav class="flex flex-1 justify-start items-center gap-[60px] ml-0"> 
+          <a href="#" class="relative font-poppins font-semibold text-[18px] text-[#181818] pb-1">Home 
+            <span class="absolute left-1/2 -translate-x-1/2 bottom-[-6px] h-[3px] w-7 bg-[#FFB21A] rounded"></span> </a> 
+            <a href="#" class="font-poppins font-semibold text-[18px] text-[#181818]">Admission</a> <a href="#" class="font-poppins font-semibold text-[18px] text-[#181818]">Academic</a> </nav> 
+            <div class="min-w-[260px] flex justify-end"> 
+              <button class="bg-gradient-to-b from-[#222] to-[#111] text-white rounded-[20px] py-[18px] px-[54px] text-[20px] font-bold shadow-xl hover:bg-[#f9a825] hover:text-[#222] transition-all">Contact Now 
+            </button> 
+        </div> 
+    </header>
+    <!-- Navbar (Mobile) -->
+  <header class="w-full flex flex-row md:hidden items-center justify-between mt-10 px-5 ">
+    <div class="flex flex-row items-center">
+    <img class="w-15" src="images/eu-logo-black.png" alt="eu-logo">
+    <span class="font-poppins font-extrabold text-[50px] text-[#181818]">Eu.</span>
+    </div>
+    <img src="images/burger.png" alt="burger">
+  </header>
+  <section class="w-full flex flex-col md:flex-row justify-between items-start md:px-20 md:pt-10 bg-[#FFF9F3] relative md:min-h-[700px] md:max-w-[1920px] md:mx-auto"> 
+    <!-- Hero Content Left --> 
+     <div class="flex flex-col justify-center w-full md:w-[600px] mt-40 md:mt-10 order-2 md:order-1"> 
+        <h1 class="font-poppins font-extrabold text-[60px] md:text-[80px] leading-[1.05] text-[#181818] mb-8">Start Your<br>Future<br>Education</h1> 
+        <p class="font-rubik text-[20px] md:text-[22px] text-[#888] mb-12 leading-[1.6]">Credibly redefine distinctive total linkage vis-a-vis multifunc data. Phosfluorescently impact goal-oriented strategic</p> <button class="bg-[#FFB21A] text-white font-bold font-poppins text-[22px] py-5 px-12 rounded-[14px] shadow-lg hover:bg-[#ffcb3d] transition-all w-fit">Discover More</button>
+      </div> 
+      <!-- Hero Graphics Centered (Desktop)  -->
+      <div class="relative w-full flex-1 flex items-center justify-center md:justify-end md:min-w-[700px] h-[600px] mt-100 md:mt-0 order-1 md:order-2"> 
+        <!-- วงกลมเหลืองอ่อน -->
+          <div class="absolute left-[60px] md:right-0 top-[-300px] md:top-1/2 md:-translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-gradient-to-b from-[#FFE9C3] to-white rounded-full z-0 "></div> 
+          
+          <!-- แปรงสีเหลือง --> 
+           <img src="images/yellow-brush.png" alt="Yellow Brush" class="absolute left-1/2 -translate-x-1/2 top-[-120px] w-[200px] max-w-full md:left-auto md:translate-x-0 md:right-20 md:top-[300px] md:w-[520px] z-10"/> 
+           
+          <!-- การ์ด Congratulations! Desktop --> 
+           <div class="absolute left-1/4 md:left-[100px] md:top-[100px] -translate-x-1/2 w-[200px] bg-white rounded-[32px] shadow-2xl p-4 flex flex-col items-center z-20"> <div class="absolute left-1/2 -translate-x-1/2 -top-8 bg-[#7B61FF] rounded-full w-[80px] h-[80px] flex items-center justify-center shadow-lg"> 
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-[40px] md:h-[40px]"> 
+            <rect width="24" height="24" fill="none"/> 
+            <path d="M4 8l8 6 8-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/> 
+            <rect x="4" y="8" width="16" height="8" rx="2" stroke="#fff" stroke-width="2" fill="none"/> </svg> 
+          </div> 
+          <span class="mt-12 font-bold text-2xl text-[#222] text-center">Congratulations!</span> <span class="text-lg text-[#888] mt-2 text-center">You got a new email</span> 
+          </div>
+          <!-- การ์ด 40k+ Happy Students --> 
+         <div class="absolute left-1/2 md:left-0 md:left-[500px] md:top-[80px] w-[200px] bg-white rounded-[20px] shadow-xl p-3 flex flex-col items-center z-20"> 
+          <div class="absolute left-1/2 -translate-x-1/2 -top-8 bg-[#3DD0FF] rounded-full w-[56px] h-[56px] flex items-center justify-center shadow-lg"> 
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path d="M12 21C12 21 4 13.5 4 8.5C4 5.42 6.42 3 9.5 3C11.24 3 12.91 3.81 14 5.08C15.09 3.81 16.76 3 18.5 3C21.58 3 24 5.42 24 8.5C24 13.5 16 21 16 21H12z" stroke="#fff" stroke-width="2" fill="none"/> 
+            </svg> 
+          </div> 
+          <span class="mt-8 font-bold text-2xl text-[#181818] text-center">40k +</span> <span class="text-base text-[#888] mb-4 text-center">Happy Students</span>
+           <div class="flex flex-row gap-2 mt-2"> 
+            <span class="w-7 h-7 bg-[#D3D3D3] rounded-full inline-block"></span> 
+            <span class="w-7 h-7 bg-[#D3D3D3] rounded-full inline-block"></span> 
+            <span class="w-7 h-7 bg-[#D3D3D3] rounded-full inline-block"></span> 
+            <span class="w-7 h-7 bg-[#D3D3D3] rounded-full inline-block"></span> </div> 
+          </div> 
+        </div>
+       </section> 
+       <!-- Companies Logo -->
+       <div class="flex flex-col md:flex-row items-center justify-center mt-10 md:mt-0">
+        <img class="w-auto h-[72px] md:h-[80px]" src="/images/martoni-logo.png" alt="martoni-logo">
+        <img class="w-auto h-[70px] md:h-[80px]" src="/images/realestate-logo.png" alt="martoni-logo">
+        <img class="w-auto h-[70px] md:h-[80px]" src="/images/promedia-logo.png" alt="martoni-logo">
+        <img class="w-auto h-[70px] md:h-[80px]" src="/images/studio1-logo.png" alt="martoni-logo">
+        <img class="w-auto h-[70px] md:h-[80px]" src="/images/maxdino-logo.png" alt="martoni-logo">
+       </div>
+      </div> 
+      <div class="flex flex-col md:flex-row justify-center items-start gap-0 mt-20 md:max-w-[1200px] mx-auto">
+        <!-- วงกลมซ้อน + ปุ่ม play --> 
+         <div style="position: relative; width: 520px; height: 400px; flex-shrink: 0;"> 
+         <div style="position: absolute; left: 0; top: 80px; width: 340px; height: 340px; background: #D6F1FA; border-radius: 50%; z-index: 1;">
+         </div> 
+         <div style="position: absolute; left: 160px; top: 20px; width: 270px; height: 270px; background: #FFE49C; border-radius: 50%; z-index: 2;">
+         </div> 
+         <div style="position: absolute; left: 290px; top: 220px; width: 72px; height: 72px; background: #fff; border-radius: 50%; box-shadow: 0 8px 32px rgba(0,0,0,0.10); display: flex; align-items: center; justify-content: center; z-index: 3;"> 
+           <svg width="28" height="28" viewBox="0 0 24 24"><polygon points="8,6 20,12 8,18" fill="#181818"/></svg> 
+         </div> 
+       </div> 
+       <!-- ข้อความขวา --> 
+       <div class="flex flex-col items-start justify-center md:w-[400px] md:max-w-[520px] md:ml-66 mt-10 md:mt-8"> 
+        <h2 class="font-poppins font-extrabold text-[32px] md:text-[44px] leading-tight text-[#181818] mb-8"> We Help to Create<br>Possibility & Success<br>in Your Career! </h2> 
+        <p class="font-rubik text-sm md:text-[20px] text-[#7B7B7B] mb-12 leading-relaxed"> Continually administrate process-centric human capital rather than bleeding-edge methodologies. Distinctively supply accurate methods of empowerment before. </p> 
+        <button class="bg-[#FFB800] text-white font-poppins font-bold text-[20px] py-4 px-10 rounded-[18px] shadow-lg hover:bg-[#ffcb3d] transition-all mt-2">Get Started Today</button> 
+      </div> 
+    </div>
+   </section>
+</body>
+  </html>
 <body class="min-h-screen bg-white">
   <!-- Mhok -->
 
